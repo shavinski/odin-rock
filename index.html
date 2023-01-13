@@ -5,13 +5,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
     <title>Rock, Paper, & Scissors</title>
-    <link rel="styelsheet" href="style.css"/>
+    
 </head>
 
 <body>
 
-    <h1>Rock Paper Scissors!!!</h1>
+    <div class="header">
+        <h1 class="header-left">Jakob Shavinski</h1>
+        <!-- <h1 class="header-middle">Rock, Paper & Scissors! </h1> -->
+        <h1 class="center-title">Rock Paper Scissors!!!</h1>
+        <h1 class="header-right">First DOM Project</h1>
+    </div>
+
+    <div class="score-box">
+        <div class="score-box-left">
+            <h2 class="player-score-title">Player Score:</h2>
+            <h2 class="player-track">0</h2>
+        </div>
+
+        <div class="score-box-right">
+            <h2 class="computer-score-title">Computer Score:</h2>
+            <h2 class="computer-track">0</h2>
+        </div>
+    </div>
+
+    <div class="versus-boxes">
+        <img src="images/questionmark.png" id="player-mystery" height="300px" width="300px">
+            <!-- <img class="player-mystery" src="images/questionmark.png" height="300px" width="300px"> -->
+        <h1 class="versus-center">VS.</h1>
+        <img src="images/questionmark.png" id="computer-mystery" height="300px" width="300px">
+    </div>
+
+    <h2 class="buttons-title">Choose your weapon!</h2>
+    <div class ="player-buttons">
+        <button type="rock-button" class="rock-option">
+            <img src="images/rock-emoji.png" alt="A rock" width="100px", height="100px">
+        </button>
+        <button type="paper-button" class="paper-option">
+            <img src="images/paper.png" alt="Paper", height="100px", width="100px">
+        </button>
+        <button type="scissor-button" class="scissor-option">
+            <img src="images/scissor.png" alt="Scissors" width="100px", height="100px">
+        </button>
+    </div>
 
 
     <script src="index.js"></script>

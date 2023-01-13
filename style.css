@@ -1,4 +1,125 @@
-body {
-    background-color: rgb(43, 38, 38);
-    text-align: center;
+* {
+    font-family: 'Courier New', Courier, monospace;
 }
+
+body {
+    background-color: rgb(39, 36, 39);
+    margin: 0;
+    flex-grow: 1 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(78, 76, 80);
+    padding: 8px;
+    margin-top: 0px;
+}
+
+.header-left {
+    display: flex;
+    padding-left: 30px;
+    color: aliceblue;
+}
+
+.header-right {
+    display: flex;
+    padding-right: 30px;
+    color: aliceblue;
+
+}
+
+.center-title {
+    color: rgb(201, 198, 39);
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 0.9em;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: skew(7deg);
+    text-shadow: 5px 4px 0 rgb(0, 0, 0)
+}
+
+.score-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 665px;
+}
+
+.score-box-left, .score-box-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-score-title, .computer-score-title {
+    font-size: 30px;
+    color: rgb(201, 198, 39);
+    text-shadow: 3px 5px 0 rgb(0, 0, 0);
+
+}
+
+.player-track, .computer-track {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.versus-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+#player-mystery, #computer-mystery {
+    height: 300px;
+    width: 300px;
+    border-style: dotted;
+    border-color: white;
+    border-style: ridge;
+    border-radius: 10px;
+    border-color: rgb(233, 220, 47);
+    border-width: 7px;
+}
+
+.versus-center {
+    color: rgb(201, 198, 39);
+    font-size: 10em;
+    transform: skew(-15deg);
+    text-shadow: 7px 10px 0 rgb(0, 0, 0), 10px 15px 0 rgb(255, 255, 255);
+}
+
+
+.buttons-title {
+    text-align: center;
+    color: rgb(201, 198, 39);
+    text-shadow: 3px 5px 0 rgb(0, 0, 0);
+    font-size: 2em;
+    margin-bottom: 75px;
+    margin-top: 50px;
+}
+
+.player-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.rock-option, .paper-option, .scissor-option {
+    border-style: ridge;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color:rgb(233, 220, 47);
+    height: 200px;
+    width: 200px;
+}
+
+.rock-option:hover, .paper-option:hover, .scissor-option:hover {
+    box-shadow: 0px 0px 10px 10px rgb(201, 198, 39);
+    transition: 0.25s;
+}
+
+
