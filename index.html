@@ -19,38 +19,40 @@
         <h1 class="header-right">First DOM Project</h1>
     </div>
 
+    <div id="results-box">
+        <p id="results">Good Luck!!! First to five wins!</p>
+    </div>
+
     <div class="score-box">
         <div class="score-box-left">
             <h2 class="player-score-title">Player Score:</h2>
-            <h2 class="player-track">0</h2>
+            <div class="player-track"></div>
         </div>
 
         <div class="score-box-right">
             <h2 class="computer-score-title">Computer Score:</h2>
-            <h2 class="computer-track">0</h2>
+            <div class="computer-track"></div>
         </div>
     </div>
 
     <div class="versus-boxes">
         <img src="images/questionmark.png" id="player-mystery" height="300px" width="300px">
             <!-- <img class="player-mystery" src="images/questionmark.png" height="300px" width="300px"> -->
-        <h1 class="versus-center">VS.</h1>
+        <h1 class="versus">VS</h1>
         <img src="images/questionmark.png" id="computer-mystery" height="300px" width="300px">
     </div>
 
     <h2 class="buttons-title">Choose your weapon!</h2>
-    <div class ="player-buttons">
-        <button type="rock-button" class="rock-option">
-            <img src="images/rock-emoji.png" alt="A rock" width="100px", height="100px">
-        </button>
-        <button type="paper-button" class="paper-option">
-            <img src="images/paper.png" alt="Paper", height="100px", width="100px">
-        </button>
-        <button type="scissor-button" class="scissor-option">
-            <img src="images/scissor.png" alt="Scissors" width="100px", height="100px">
-        </button>
+
+    <div id ="player-buttons">
+        <button class="button" id="rock"><img src="images/rock-emoji.png" id= 'rock'alt="A rock"></button>
+        <button class="button" id="paper"><img src="images/paper.png" id= 'paper' alt="Paper"></button>
+        <button class="button" id="scissor"><img src="images/scissor.png" id = 'scissor' alt="Scissors"></button>
     </div>
 
+    <div class="reset-game">
+        <button id="reset-btn">PLAY AGAIN!!!</button>
+    </div>
 
     <script src="index.js"></script>
 </body>

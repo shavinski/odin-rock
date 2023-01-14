@@ -70,7 +70,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
 }
 
 #player-mystery, #computer-mystery {
@@ -84,11 +83,15 @@ body {
     border-width: 7px;
 }
 
-.versus-center {
+.versus {
     color: rgb(201, 198, 39);
     font-size: 10em;
+    text-align: center;
     transform: skew(-15deg);
-    text-shadow: 7px 10px 0 rgb(0, 0, 0), 10px 15px 0 rgb(255, 255, 255);
+    text-shadow: 7px 10px 0 rgb(0, 0, 0);
+    margin-left: 210px;
+    margin-right: 210px;
+
 }
 
 
@@ -97,29 +100,75 @@ body {
     color: rgb(201, 198, 39);
     text-shadow: 3px 5px 0 rgb(0, 0, 0);
     font-size: 2em;
-    margin-bottom: 75px;
-    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
-.player-buttons {
+#player-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
 }
 
-.rock-option, .paper-option, .scissor-option {
+.button {
     border-style: ridge;
     border-radius: 10px;
     border-width: 5px;
     border-color:rgb(233, 220, 47);
     height: 200px;
     width: 200px;
+    margin: 50px;
 }
 
-.rock-option:hover, .paper-option:hover, .scissor-option:hover {
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.button:hover {
     box-shadow: 0px 0px 10px 10px rgb(201, 198, 39);
     transition: 0.25s;
 }
 
 
+#results {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(201, 198, 39);
+    text-shadow: 7px 10px 0 rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.player-track {
+    color: rgb(56, 240, 56);
+}
+
+.computer-track {
+    color: rgb(255, 0, 0);
+}
+
+.reset-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset-btn {
+    font-size: 30px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: rgb(255, 0, 0);
+    border-style: ridge;
+    border-color: rgb(196, 0, 0);
+    border-radius: 50px;
+}
+
+#reset-btn:hover {
+    box-shadow: 0px 0px 10px 10px rgb(185, 6, 0);
+    transition: 0.25s;
+}
